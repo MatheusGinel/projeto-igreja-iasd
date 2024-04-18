@@ -162,6 +162,15 @@ button:hover {
     max-height: 56%;
 }
 
+.novo-tempo {
+    margin: 40px;
+}
+
+.novo-tempo img {
+    max-width: 35%;
+    max-height: 35%;
+}
+
 .conteudo-pagina {
     width: 100%;
     height: 100%;

@@ -11,14 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('departamentos', function (Blueprint $table) {
+        Schema::create('usuario_departamento', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('nome', 50);
-            $table->string('descricao', 50);
-            $table->dateTime('criacao');
-            $table->dateTime('alteracao');
-            $table->dateTime('exclusao');
         });
     }
 
@@ -27,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('departamentos');
+        Schema::dropIfExists('usuario_departamento');
     }
 };

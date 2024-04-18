@@ -6,7 +6,7 @@
         <a href="https://www.youtube.com/@iasdceapp"><img src="{{ asset ('img/youtube.png') }}"></a>
     </div>
     <div class="area-contato">
-        <h2>Igreja Adventista do Sétimo Dia - Centro Adventista Educacional</h2>
+        <h2>Igreja Adventista do Sétimo Dia - Centro Educacional Adventista</h2>
         <h4>Presidente Prudente/SP</h4>
     </div>
     <div class="localizacao">

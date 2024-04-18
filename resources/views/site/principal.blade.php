@@ -7,8 +7,8 @@
         <br>
         <div class="esquerda">
             <div class="informacoes">
-                <h1>Gerenciamento de Escalas da Igreja Adventista</h1>
-                <p>Sistema para o líder fazer a escala do seu departamento<p>
+                <h1>Bem-vindo a Igreja Adventista do CEA</h1>
+                <p>Aqui é onde você pode ficar informado sobre as noticias da igreja<p>
                 <div class="chamada">
                     <img src="{{ asset ('img/check.png') }}">
                     <span class="texto-branco">Escala completa e descomplicada</span>
