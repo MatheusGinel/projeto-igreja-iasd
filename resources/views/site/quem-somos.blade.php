@@ -19,6 +19,8 @@
                     <img src="{{ asset ('img/check.png') }}">
                     <span class="texto-branco"><b>Visão :</b>Em harmonia com as grandes profecias das Escrituras, entendemos que o clímax do plano de Deus é restaurar toda a Sua criação à completa harmonia com Sua perfeita vontade e justiça.</span>
                 </div>
+                <br>
+                <br>
                 <div class="novo-tempo">
                     <span class="texto-branco"><b>Nossos Parceiros:</b></span>
                     <br>
@@ -26,7 +28,7 @@
                     <a href="https://www.novotempo.com/"><img src="{{ asset ('img/novo-tempo.png') }}"></a>
                     <a href="https://pprudente.educacaoadventista.org.br/"><img src="{{ asset ('img/adv.png') }}"></a>
                     <br>
-                </div>
+                </div> 
                 
             </div>
         </div>

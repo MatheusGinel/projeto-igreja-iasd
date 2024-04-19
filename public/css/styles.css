@@ -26,13 +26,33 @@ h2 {
 }
 
 input, select, textarea, button {
-    width: 100%;
+    width: 20%;
     padding: 10px 15px;
     margin: 10px 0px 10px 0px;
     box-sizing: border-box;
     border-radius: 3px;
     background-color: transparent;
     color: #333;
+}
+
+.novo-contato input, select, textarea, button {
+    width: 30%;
+    padding: 10px 15px;
+    margin: 10px 0px 10px 0px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #333;
+}
+
+.entrar {
+    width: 10%;
+    padding: 10px 15px;
+    margin: 10px 0px 10px 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #c51616;
 }
 
 .texto-branco {
@@ -130,6 +150,20 @@ button:hover {
     height: 100%;
 }
 
+.login {
+    float: left;
+    background-color: #2a9ee2;
+    width: 100%;
+    height: 100%;
+}
+
+.pagina-inicial {
+    float:left;
+    background-color: #268fd0;
+    width: 100%;
+    height: 100%;
+}
+
 .informacoes, .contato {
     margin: 100px 40px 40px 40px;
 }
@@ -152,19 +186,19 @@ button:hover {
     max-height: 100%;
 }
 
-.calendario {
+.img-igreja {
     margin: 40px;
-    margin-left: 280px;
 }
 
-.calendario img {
-    max-width: 56%;
-    max-height: 56%;
+.img-igreja img {
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 10px;
 }
 
 .novo-tempo {
-    margin: 40px;
-}
+    margin: 0px;
+} 
 
 .novo-tempo img {
     max-width: 35%;
@@ -212,4 +246,8 @@ button:hover {
 
 .redes-sociais img {
     margin: 0px 15px 0px 15px;
+}
+
+.letra-cor-destaque {
+    color: gold;
 }
