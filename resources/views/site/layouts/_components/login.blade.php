@@ -9,5 +9,5 @@
     <button type="submit" class="{{ $classe }}">ENTRAR</button>
     <br>
     <br>
-    <a href="{{ route('site.novocadastro') }}">Não tem cadastro? Clique aqui e realize o seu cadastro</a>
+    <a href="{{ route('site.novocadastro') }}">Não tem cadastro? <br>Clique aqui e realize o seu cadastro</a>
 </form>

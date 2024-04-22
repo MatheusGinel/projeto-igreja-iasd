@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('usuario', function (Blueprint $table) {
+        Schema::create('usuarios', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('usu_nome_exibicao', 50);
@@ -24,7 +24,7 @@ return new class extends Migration
 
         Schema::table('usuario_departamento', function(Blueprint $table){
             $table->unsignedBigInteger('usu_id');
-            $table->foreign('usu_id')->references('id')->on('usuario');
+            $table->foreign('usu_id')->references('id')->on('usuarios');
         });
     }
 
@@ -37,6 +37,6 @@ return new class extends Migration
             $table->dropForeign('usuario_departamento_usu_id_foreign');
             $table->dropColumn('usu_id');
         });
-        Schema::dropIfExists('usuario');
+        Schema::dropIfExists('usuarios');
     }
 };
