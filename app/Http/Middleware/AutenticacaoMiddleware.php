@@ -17,12 +17,11 @@ class AutenticacaoMiddleware
     {
         //Verifica se o usuário possui acesso a rota
         session_start(); 
-
+        
         if(isset($_SESSION['email']) && $_SESSION['email'] != ''){
-            //return $next($request);
-            dd($request);
+            return $next($request);
         } else {
-            return redirect()->route('site.entrar', ['erro' => 2]);
+            return redirect()->route('site.login', ['erro' => 2]);
         }        
     }
 }

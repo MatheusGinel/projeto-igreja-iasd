@@ -7,20 +7,18 @@ use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
-    public function login(Request $request){
+    public function index(Request $request){
         $erro = '';
 
         if($request->get('erro') == 1){
             $erro = 'Usuário e/ou senha não existe';
         }
 
-        if($request->get('erro') == 3){
+        if($request->get('erro') == 2){
             $erro = 'Necessário realizar login para ter acesso á página';
-        } else {
-            return view('site.entrar');
         }
 
-    return view('site.entrar', ['titulo' => 'Login', 'erro' => $erro]);
+        return view('site.login', ['titulo' => 'Login', 'erro' => $erro]);
     }
 
     public function autenticar(Request $request){
@@ -50,20 +48,21 @@ class LoginController extends Controller
                 ->first();
         
         if(isset($usuario->usu_nome_exibicao)){
-            session_start(); 
-            
             $_SESSION['nome'] = $usuario->usu_nome_exibicao;
             $_SESSION['email'] = $usuario->usu_email;
 
-            return view('app.home');
+            /*session()->put('nome', $usuario->usu_nome_exibicao);
+            session()->put('email', $usuario->usu_email);*/
+
+            return redirect()->route('app.home');
         } else {
-            return redirect()->route('site.entrar', ['erro' => 1]);
+            return redirect()->route('site.login', ['erro' => 1]);
         }
         //return view('site.home');
     }
 
     public function sair(){
         session_destroy();
-        return redirect()->route('site.principal');
+        return redirect()->route('site.index');
     }
 }
